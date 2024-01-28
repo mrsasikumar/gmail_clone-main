@@ -104,4 +104,4 @@ const Date = styled(Typography)({
   )
 }
 
-export default ViewEmails
+export default ViewEmails;

@@ -1,7 +1,5 @@
-// index.js
-
 const express = require('express');
-const connect = require('./config/db');
+const connectToMongoDB = require('./config/db');
 const routes = require('./routes/route');
 const cors = require('cors');
 
@@ -26,9 +24,8 @@ app.listen(PORT, async () => {
   
   // Connect to the MongoDB database
   try {
-    await connect();
-    console.log('MongoDB connected successfully');
+    await connectToMongoDB();
   } catch (error) {
-    console.error('Error connecting to MongoDB:', error.message);
+    console.error('Error in the main application:', error);
   }
 });

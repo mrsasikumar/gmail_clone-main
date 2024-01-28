@@ -1,6 +1,7 @@
 const email=require('../model/email')
 
-const saveSentEmail=(request,response)=>{
+const 
+saveSentEmail=(request,response)=>{
     try {
      const Email=   new email(request.body);
      Email.save();

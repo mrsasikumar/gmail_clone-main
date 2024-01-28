@@ -31,4 +31,4 @@ const SideBar = ({openDrawer}) => {
   )
 }
 
-export default SideBar
+export default SideBar;

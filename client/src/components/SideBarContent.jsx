@@ -76,4 +76,4 @@ const onComposeClick = () => {
   )
 }
 
-export default SideBarContent
+export default SideBarContent;
